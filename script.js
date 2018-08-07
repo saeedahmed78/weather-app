@@ -4,7 +4,7 @@ function initialize(){
 
 	let wheather = new XMLHttpRequest();
 	let apiKey = "41d496f5b3f1a854e6e79910b71ba93f";
-	wheather.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+city +" &units=imperial"+ "&appid=" + apiKey, false)
+	wheather.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+city +" &units=imperial"+ "&appid=" + apiKey, false)
 	wheather.send(null);
 	let r = JSON.parse(wheather.response);
 	console.log(r)
