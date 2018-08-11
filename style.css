@@ -1,31 +1,121 @@
-body{
-	margin: 0px;
-	background-image: url("download (1).jpg");
-	background-size:  cover;
-	font-family: 'Anton', sans-serif;
+body, html{
+    height: 100%;
+    width: 100%;
 }
-.header{
-	/*background-color: lightblue;*/
-	text-align: center;
-	padding: 20px;
-	margin-bottom: 20px;
+.main{
+    background-image:url("images/img5.gif");
+    background-size: cover;
+    transition: 1s;
+    height: 100vh;
+    width: 100%;
+    
+}
+.main-layout{
+    height: 100vh;
+    width: 100%;
+    background-color: #1d212457;
+    overflow-y: scroll;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    /*width: 400px;*/
+    flex-direction: column;
+    height: 550px;
+    /*width: 400px;*/
+     /*border: 1px solid black; */
+    text-align: center;
+    color: white;
 
 }
-.container{
-	text-align: center;
-	width: 400px;
+.heading{
+    font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
 }
-input{
-	margin-bottom: 20px;
+.input-group{
+    margin-top: 20px;
+    align-items: center;
+    
 }
-.info{
-	height: 300px;
-	width: 370px;
-	border-radius: 5px;
-	/*color: green;*/
-	margin-top: 20px;
-	font-size: 1.5em;
+.btn{
+    margin-top: 20px;
+    padding: 6px 32px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1em;
+    background-color: #e5e5f5;
+
+    
+}
+.btn-div{
+    text-align: center;
+    justify-content: center;
+}
+.input{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 400px;
+    text-align: center;
+    color: grey;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+
 }
 
+.current-weather{
+    margin-top: -20px;
+    height: 300px;
+    /*border: 1px solid black;    */
 
+}
+.city-name{
+	margin-top: 35px;
+	margin-left: 30px;
+	font-size: 3em;
+	/* line-height: 1; */
+}
+.temp{
+    /* margin-left: 30px; */
+    /* margin-top: 40px; */
+	font-size: 4em;
+	line-height: 0.6;
+}
+.weather{
+    /* margin-left: 30px; */
+    font-size: 2em;
+	line-height: 0.5;
+	
+}
+.wind{
+    font-size: 2em;
+    line-height: 1.5;
+}
 
+.mon,.tue,.wed,.thus,.fri{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+.weeks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+hr{
+    border: 0.5px solid grey;
+
+}
+.day{
+    margin-top: 10px;
+}

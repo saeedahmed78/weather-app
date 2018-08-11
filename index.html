@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<script type="text/javascript" src="script.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title></title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<script src="script.js"></script>
+
 </head>
 <body>
-	<div class="header">
-		<h1>Weather Info</h1>
+
+	
+
+	<div class="main">
+		<div class="main-layout">
+			<div class="center">
+				<h1 class="heading"> The Weather </h1>
+				<div class="search">
+				<input type="text" class="form-control input" id="city" placeholder="Enter Country" aria-label="Recipient's username" aria-describedby="button-addon2">
+			</div>
+				<div class="input-group-append btn-div">
+					<button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="initialize()"><i class="fas fa-search"></i></button>
+				</div>
+				<div class="current-weather">
+
+					<p class="city-name"></p>
+					<p class="temp" id="temp"></p>
+					<p class="wind" id="wind"></p>
+					<p class="weather" id="wheather"></p>
+					
+					
+				</div> 
+			</div>
+				<div class="weeks">
+					<div class="mon">
+						<p class="day">Mon</p>
+						<hr>
+						<p class="pre-temp">28 <sup>&#176;</sup></p>
+						<p class="pre-wind">Wind 10.5</p>
+						<p class="pre-cloud">Clear Cloud</p>
+					</div>
+					<div class="tue">
+						<p class="day">Tue</p>
+						<hr>
+						<p class="pre-temp">28 <sup>&#176;</sup></p>
+						<p class="pre-wind">Wind 10.5</p>
+						<p class="pre-cloud">Clear Cloud</p>
+					</div>
+					<div class="wed">
+						<p class="day">Wed</p>
+						<hr>
+						<p class="pre-temp">28 <sup>&#176;</sup></p>
+						<p class="pre-wind">Wind 10.5</p>
+						<p class="pre-cloud">Clear Cloud</p>
+					</div>
+					<div class="thus">
+						<p class="day">Thus</p>
+						<hr>
+						<p class="pre-temp">28 <sup>&#176;</sup></p>
+						<p class="pre-wind">Wind 10.5</p>
+						<p class="pre-cloud">Clear Cloud</p>
+					</div>
+					<div class="fri">
+						<p class="day">Fri</p>
+						<hr>
+						<p class="pre-temp">28 <sup>&#176;</sup></p>
+						<p class="pre-wind">Wind 10.5</p>
+						<p class="pre-cloud">Clear Cloud</p>
+					</div>
+					<div class="sat"></div>
+					<div class="sun"></div>
+				</div>	
+			
+			
+		</div>
+
 	</div>
-	<div class="container">
-		<input type="text" id="city" class="form-control" >
-		<button onclick="initialize()" class="btn btn-success">check</button>
-	<div class="info">	
-		<p id="temp"></p>
-		<p id="wheather"></p>
-		<p id="wind"></p>
-		<p id="message"></p>
-	</div>
-	</div>
+	<button>click me</button>
 </body>
 </html>
