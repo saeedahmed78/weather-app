@@ -2,7 +2,7 @@ let degree = "&#176;"
 function initialize(){
 	let city = document.querySelector("#city").value;
 	$.ajax({
-		url: "http://api.openweathermap.org/data/2.5/weather?q=" +city+ "&appid=41d496f5b3f1a854e6e79910b71ba93f&units=metric",
+		url: "https://api.openweathermap.org/data/2.5/weather?q=" +city+ "&appid=41d496f5b3f1a854e6e79910b71ba93f&units=metric",
 		success: function(data){
 		console.log(data);
 		document.querySelector(".city-name").innerHTML = city + "<sup>"+"<i class='fas fa-cloud'>"+"</i>"+"</sup>";
