@@ -2,11 +2,11 @@
 function initialize(){
 	let city = document.querySelector("#city").value;
 	let degree = "&#176;"
-	let wheather = new XMLHttpRequest();
+	let weather = new XMLHttpRequest();
 	let apiKey = "41d496f5b3f1a854e6e79910b71ba93f";
-	wheather.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+city +" &units=imperial"+ "&appid=" + apiKey, false)
-	wheather.send(null);
-	let r = JSON.parse(wheather.response);
+	weather.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+city +" &units=imperial"+ "&appid=" + apiKey, false)
+	weather.send(null);
+	let r = JSON.parse(weather.response);
 	console.log(r)
 	if (city !== "") {
 	let temp = r.main.temp;	
