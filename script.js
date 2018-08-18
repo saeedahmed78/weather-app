@@ -1,4 +1,6 @@
 let degree = "&#176;"
+
+
 function initialize(){
 	let city = document.querySelector("#city").value;
 	$.ajax({
@@ -15,8 +17,23 @@ function initialize(){
 		}
 	
 	})
-}
 
+
+$.ajax({
+	url: "https://api.openweathermap.org/data/2.5/forecast?q=" +city+ "&appid=41d496f5b3f1a854e6e79910b71ba93f&units=metric",
+	success: function(data){
+	console.log(data);
+		// document.querySelector(".day").innerHTML = city + "<sup>"+"<i class='fas fa-cloud'>"+"</i>"+"</sup>";
+		document.querySelector(".pre-temp").innerHTML = data.list[1].main.temp + degree;
+		// document.querySelector(".pre-wind").innerHTML = data.weather[0].description;
+		// document.querySelector(".pre-cloud").innerHTML = data.wind.speed;
+	},
+	error: function(error){
+		alert(error.responseJSON.message);
+	}
+
+})
+}
 
 
 
