@@ -98,23 +98,29 @@ body, html{
     line-height: 1.5;
 }
 
-.mon,.tue,.wed,.thus,.fri{
+.mon,.tue,.wed,.thus,.fri,.sat,.sun{
     height: 200px;
-    width: 200px;
+    /* width: 200px; */
     border: 1px solid black;
+    min-width: 100px;
+    flex: 1 1 160px;
+    max-width: 250px;
+
 }
 .weeks{
+
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 10px;
     text-align: center;
     color: white;
     font-size: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
 }
 hr{
     border: 0.5px solid grey;
-
 }
 .day{
     margin-top: 10px;
