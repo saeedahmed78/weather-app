@@ -1,100 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Page Title</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-	<script src="script.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>Document</title>
 </head>
-<body onload="themeChanger()">
-
-	
-
-	<div class="main">
-		<div class="main-layout">
-			<div class="center">
-				<h1 class="heading"> The Weather </h1>
-				<div class="search">
-				<input type="text" class="form-control input" id="city" placeholder="Enter city" aria-label="Recipient's username" aria-describedby="button-addon2">
-			</div>
-				<div class="input-group-append btn-div">
-					<button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="initialize()"><i class="fas fa-search"></i></button>
-				</div>
-				<div class="current-weather">
-
-					<p class="city-name"></p>
-					<p class="temp" id="temp"></p>
-					<p class="wind" id="wind"></p>
-					<p class="weather" id="wheather"></p>
-					
-					
-				</div> 
-			</div>
-				<div class="weeks">
-					<div class="mon">
-						<p class="day day-mon">Day</p>
-						<hr>
-						<p class="pre-temp-mon">Temp <sup>&#176;</sup></p>
-						<p class="pre-wind-mon">Wind</p>
-						<p class="pre-cloud-mon">Weather</p>
-					</div>
-					<div class="tue">
-						<p class="day day-tues">Day</p>
-						<hr>
-						<p class="pre-temp-tues">Temp <sup>&#176;</sup></p>
-						<p class="pre-wind-tue">Wind</p>
-						<p class="pre-cloud-tue">Weather</p>
-					</div>
-					<div class="wed">
-						<p class="day day-wed">Day</p>
-						<hr>
-						<p class="pre-temp-wed">Temp <sup>&#176;</sup></p>
-						<p class="pre-wind-wed">Wind</p>
-						<p class="pre-cloud-wed">Weather</p>
-					</div>
-					<div class="thus">
-						<p class="day day-thus">Day</p>
-						<hr>
-						<p class="pre-temp-thus">Temp <sup>&#176;</sup></p>
-						<p class="pre-wind-thus">Wind</p>
-						<p class="pre-cloud-thus">Weather</p>
-					</div>
-					<div class="fri">
-						<p class="day day-fri">Day</p>
-						<hr>
-						<p class="pre-temp-fri">Temp <sup>&#176;</sup></p>
-						<p class="pre-wind-fri">Wind</p>
-						<p class="pre-cloud-fri">Weather</p>
-					</div>
-					<!-- <div class="sat">
-						<p class="day day-sat">Sat</p>
-						<hr>
-						<p class="pre-temp-sat">Temp <sup>&#176;</sup></p>
-						<p class="pre-wind-sat">Wind</p>
-						<p class="pre-cloud-sat">Clear Cloud</p>
-					</div>
-					<div class="sun">
-						<p class="day day-sun">Sun</p>
-						<hr>
-						<p class="pre-temp-sunday">28 <sup>&#176;</sup></p>
-						<p class="pre-wind-sunday">Wind 10.5</p>
-						<p class="pre-cloud-sunday">Clear Cloud</p>
-					</div> -->
-				</div>	
-			
-			
-		</div>
-
-	</div>
-	
+<body>
+ 
+            <form class="form-wrapper cf" onsubmit="javascript:return false">
+                     <input class="find" id="search" type="text" placeholder="Search here..."onkeydown = "if (event.keyCode == 13)
+                    document.getElementById('btnSearch').click()" >
+                    <button class="find-button" id="btnSearch" type="button" onclick="getWheather()">Search</button>
+            </form>
+<div class="container">
+      
+    <div class="weather">
+          
+            <h2 class="location">Karachi, Pakistan</h2>
+            <h1 ><img class="weatherIcon" src="images/icons/icon-1.svg" alt="" width="90"> <span class="tempr"> 31 </span> C°</h1>
+            <h3 class="day">Thursday</h3>
+            <div class="add-icons">
+                <span><img src="images/icon-umberella.png" alt=""><span class="humidity">20</span>%</span>
+                <span><img src="images/icon-wind.png" alt=""><span class="wspeed">18</span>m/s </span>
+                <span><img src="images/icon-compass.png" alt=""><span class="direct">East</span>°</span>
+        </div>
+    </div>
+    <div class="weekly-weather black">
+        <div class="weather-child">
+                <div class="week-day g-color"><p class="day1">Friday 11</p></div>
+                <div class="week-content">
+                    
+            <h3 class="date1">Fri 10</h3>
+            <img class="weatherIcon1" src="images/icons/icon-3.svg" alt="" >
+            <p class="temp temp1">36 C°</p>
+            <p class="icon desc0">Sunny Weather</p>
+     </div>
+        </div>
+        <div class="weather-child grey"> 
+                <div class="week-day b-color"><p class="days day2">Saturday 12</p></div>
+                <div class="week-content">
+             <h3 class="date2">Fri 10</h3>
+             <img class="weatherIcon2" src="images/icons/icon-5.svg" alt="" >
+            <p class="temp temp2">35 C°</p>
+            <p class="icon desc1">Mostly Cloudy</p>
+    </div>   </div>
+        <div class="weather-child black">
+                <div class="week-day g-color"><p class="days day3">Sunday 13</p></div>
+                <div class="week-content">
+                <h3 class="date3">Fri 10</h3>
+                <img class="weatherIcon3" src="images/icons/icon-12.svg" alt="" >
+                <p class="temp temp3">33 C°</p>
+                <p class="icon desc2">Stormy Weather</p>
+     
+</div>
+        </div>
+        <div class="weather-child grey">
+                <div class="week-day b-color"><p class="days day4">Monday 14</p></div>
+                <div class="week-content">
+                <h3 class="date4">Fri 10</h3>
+                <img class="weatherIcon4" src="images/icons/icon-7.svg" alt="" >
+                <p class="temp temp4">28 C°</p>
+                <p class="icon desc3">Humid Weather</p>
+     
+            </div>
+        </div>
+        <div class="weather-child black">
+                <div class="week-day g-color"><p class="days day5">Tuesday 15</p></div>
+                <div class="week-content">
+                <h3 class="date5">Fri 10</h3>
+                <img class="weatherIcon5" src="images/icons/icon-13.svg" alt="" >
+                <p class="temp temp5">32 C°</p>
+                <p class="icon desc4">Snow storms</p>
+                
+            </div>
+        </div>                                
+    </div>
+</div>   
+<div class="none"> 
+<i class="fas fa-arrow-up arrow"></i>
+<h1 class="none-h" style="text-align: center">Type Your City name to get Weather Information</h1>
+</div>
 </body>
 </html>
