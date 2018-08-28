@@ -11,10 +11,40 @@ let degree = "&#176;"
 			success: function(data){
 			console.log(data);
 			let temp = Math.round(data.main.temp);
-			document.querySelector(".city-name").innerHTML = city + "<sup>"+"<i class='fas fa-cloud'>"+"</i>"+"</sup>";
+			document.querySelector(".city-name").innerHTML = city ;
 			document.getElementById("temp").innerHTML = temp + degree;
 			document.getElementById("wheather").innerHTML = data.weather[0].description;
-			document.getElementById("wind").innerHTML = data.wind.speed;
+            document.getElementById("wind").innerHTML = data.wind.speed;
+            
+
+            let weatherType = data.weather[0].icon;
+        if(weatherType =="01d" || weatherType == "01n"){
+            document.querySelector(".weatherIcon").src ="https://png.icons8.com/ios/50/ffffff/sun.png";
+        }
+        else if(weatherType =="02d" || weatherType == "02n"){
+            document.querySelector(".weatherIcon").src = "images/icons/few-clouds.svg";
+        }
+        else if(weatherType == "03d" || weatherType == "03n"){
+            document.querySelector(".city-name>weatherIcon").innerHTML = `<img src="https://png.icons8.com/ios/50/ffffff/sun.png">`;
+        }
+        else if(weatherType == "04d" || weatherType == "04n"){
+            document.querySelector(".weatherIcon").src = "images/icons/brokken.svg";
+        }
+        else if(weatherType == "09d" || weatherType == "09n"){
+            document.querySelector(".weatherIcon").src = "images/icons/shower-rain.svg";
+        }
+        else if(weatherType == "10d" || weatherType == "010n"){
+            document.querySelector(".weatherIcon").src = "images/icons/rain.svg";
+        }
+        else if(weatherType == "11d" || weatherType == "11n"){
+            document.querySelector(".weatherIcon").src = "images/icons/thunder.svg";
+        }
+        else if(weatherType == "13d" || weatherType == "13n"){
+            document.querySelector(".weatherIcon").src = "images/icons/snow.svg";
+        }
+        else if(weatherType == "50d" || weatherType == "50n"){
+            document.querySelector(".weatherIcon").src = "images/icons/mist.svg";
+        }
 			},
 			error: function(error){
 				alert(error.responseJSON.message);
