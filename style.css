@@ -116,3 +116,10 @@ hr{
 .day{
     margin-top: 10px;
 } 
+.weatherIcon{
+   line-height: 20px; 
+}
+.weather-icon{
+    display: flex;
+    justify-content: center
+}

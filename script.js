@@ -19,31 +19,32 @@ let degree = "&#176;"
 
             let weatherType = data.weather[0].icon;
         if(weatherType =="01d" || weatherType == "01n"){
-            document.querySelector(".weatherIcon").src ="https://png.icons8.com/ios/50/ffffff/sun.png";
+            document.querySelector(".weatherIcon").src ="https://png.icons8.com/ios/50/ffffff/sun-filled.png";
         }
         else if(weatherType =="02d" || weatherType == "02n"){
-            document.querySelector(".weatherIcon").src = "images/icons/few-clouds.svg";
+            document.querySelector(".weatherIcon").src ="https://png.icons8.com/wired/50/ffffff/clouds.png";
         }
         else if(weatherType == "03d" || weatherType == "03n"){
-            document.querySelector(".city-name>weatherIcon").innerHTML = `<img src="https://png.icons8.com/ios/50/ffffff/sun.png">`;
+            document.querySelector(".city-name>weatherIcon").src = "https://png.icons8.com/ios/50/ffffff/cloudflare.png";
         }
         else if(weatherType == "04d" || weatherType == "04n"){
-            document.querySelector(".weatherIcon").src = "images/icons/brokken.svg";
+            document.querySelector(".weatherIcon").src = "https://www.google.com.pk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwihgsOkw4_dAhVJyoUKHYaYAFsQjRx6BAgBEAU&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fclouds%2F379676%2F&psig=AOvVaw0VuZDY9ikbkGPsGx2zQHXX&ust=1535538081598920";
         }
         else if(weatherType == "09d" || weatherType == "09n"){
-            document.querySelector(".weatherIcon").src = "images/icons/shower-rain.svg";
+            document.querySelector(".weatherIcon").src ="https://png.icons8.com/wired/50/ffffff/rain.png";
         }
         else if(weatherType == "10d" || weatherType == "010n"){
-            document.querySelector(".weatherIcon").src = "images/icons/rain.svg";
+            document.querySelector(".weatherIcon").src = "https://png.icons8.com/ios/50/ffffff/torrential-rain.png";
         }
         else if(weatherType == "11d" || weatherType == "11n"){
-            document.querySelector(".weatherIcon").src = "images/icons/thunder.svg";
+            document.querySelector(".weatherIcon").src = "https://png.icons8.com/wired/50/ffffff/storm.png";
         }
         else if(weatherType == "13d" || weatherType == "13n"){
-            document.querySelector(".weatherIcon").src = "images/icons/snow.svg";
+            document.querySelector(".weatherIcon").src = "https://png.icons8.com/ios/50/ffffff/winter.png";
         }
         else if(weatherType == "50d" || weatherType == "50n"){
-            document.querySelector(".weatherIcon").src = "images/icons/mist.svg";
+			document.querySelector(".weatherIcon").src = "https://www.google.com.pk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjIy-Scxo_dAhUNLBoKHZwuBEEQjRx6BAgBEAU&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F1010960%2Fmaterial_design_mist_weather_icon&psig=AOvVaw0qj5mvNPQh5CRL_gh6XHX_&ust=1535538861148537";
+			
         }
 			},
 			error: function(error){
