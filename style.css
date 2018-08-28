@@ -91,7 +91,7 @@ body, html{
     line-height: 1.5;
 }
 .mon,.tue,.wed,.thus,.fri,.sat,.sun{
-    height: 200px;
+    height: 250px;
     /* width: 200px; */
     border: 1px solid black;
     min-width: 100px;
@@ -117,9 +117,14 @@ hr{
     margin-top: 10px;
 } 
 .weatherIcon{
-   line-height: 20px; 
+   line-height: 20px;
+   height: 70px;
 }
 .weather-icon{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    
+}
+.forecast-icon{
+    height: 50px;
 }
