@@ -22,10 +22,11 @@
 			<div class="center">
 				<h1 class="heading"> The Weather </h1>
 				<div class="search">
-				<input type="text" class="form-control input" id="city" placeholder="Enter city" aria-label="Recipient's username" aria-describedby="button-addon2">
+				<input type="text" class="form-control input" id="city" placeholder="Enter city" aria-label="Recipient's username"  onkeydown = "if (event.keyCode == 13)
+				document.getElementById('btnSearch').click()">
 			</div>
 				<div class="input-group-append btn-div">
-					<button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="initialize()"><i class="fas fa-search"></i></button>
+					<button class="btn btn-outline-secondary" type="button" id="btnSearch" onclick="initialize()"><i class="fas fa-search"></i></button>
 				</div>
 				<div class="current-weather">
                                        
